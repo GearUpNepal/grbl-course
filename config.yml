@@ -1,0 +1,16 @@
+title: Grbl
+description: Grbl course to run cnc
+template:
+  repo: grbl-template
+  name: grbl
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
